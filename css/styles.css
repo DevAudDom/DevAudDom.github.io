@@ -1,0 +1,99 @@
+/** BODY **/
+body {
+    flex: 1;
+}
+/** END BODY **/
+/** HEADER **/
+#header{
+    padding: 0px;
+}
+/** END HEADER **/
+/** CONTENT **/
+.secTitle{
+    margin-bottom: 20px;
+}
+.featRow{
+    margin: 0px -18px;
+    padding: 8px;
+}
+.featColumn{
+    padding: 6px;
+    float: left;
+    position: relative; /* Add position relative */
+    transition: all 0.3s ease; /* Smooth transition */
+    }
+.featColumn:hover{
+    bottom: 15px;
+    box-shadow: 0px 10px 10px 0px black;
+}
+.featContent {
+    padding: 8px;
+    border: 1px solid gray;
+}
+.featRow a {
+    text-decoration: none;
+}
+.featRow a:hover{
+    text-decoration: underline;
+}
+p{ /* Relies on webkit */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+/** END CONTENT **/
+/** FOOTER **/
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Flex-grow for content to push footer to the bottom */
+#mainContent {
+    flex-grow: 1;
+}
+#footer {
+    background-color: black; /* Light gray background */
+    padding: 20px 0px;
+    width: 100vw;
+}
+/** END FOOTER **/
+/********** Extra Large devices only **********/
+@media (min-width: 1200px) {
+    .featColumn{
+        width: 25%;
+    }
+}
+  
+/********** Large devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .featColumn{
+        width: 25%;
+    }
+}
+  
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .featColumn{
+        width: 25%;
+    }  
+}
+  
+/********** Small devices only **********/
+@media (min-width: 576px) and (max-width: 767px) {
+    .featColumn{
+        width: 50%;
+    }
+}
+  
+  
+/********** Extra small devices only **********/
+@media (max-width: 575px) {
+    .featColumn{
+        width: 50%;
+    }
+}
