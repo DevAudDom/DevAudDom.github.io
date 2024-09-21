@@ -7,6 +7,9 @@ body {
 #header{
     padding: 0px;
 }
+.navbar{
+padding-left: 20px;
+}
 /** END HEADER **/
 /** CONTENT **/
 .secTitle{
@@ -57,7 +60,7 @@ html, body {
     flex-grow: 1;
 }
 #footer {
-    background-color: black; /* Light gray background */
+    background-color: solid lightgray; /* Light gray background */
     padding: 20px 0px;
     width: 100vw;
 }
