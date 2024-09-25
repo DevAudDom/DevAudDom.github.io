@@ -11,12 +11,14 @@ body {
 padding-left: 20px;
 }
 /** END HEADER **/
-/** CONTENT **/
+/** CONTENT of Index.html**/
 .secTitle{
     margin-bottom: 20px;
 }
-.image {
-
+.headshot {
+max-height: 250px;
+width: auto;
+border-radius: 40%;
 }
 .featRow{
     margin: 0px -18px;
@@ -48,6 +50,33 @@ p{ /* Relies on webkit */
     -webkit-line-clamp: 4;
     overflow: hidden;
 }
+/** END CONTENT **/
+.featRow{
+    margin: 0px -18px;
+    padding: 8px;
+}
+.featColumn{
+    padding: 6px;
+    float: left;
+    position: relative; /* Add position relative */
+    transition: all 0.3s ease; /* Smooth transition */
+    }
+.featColumn:hover{
+    bottom: 15px;
+    box-shadow: 0px 10px 10px 0px black;
+}
+.featContent {
+    padding: 8px;
+    border: 1px solid gray;
+}
+.featRow a {
+    text-decoration: none;
+}
+.featRow a:hover{
+    text-decoration: underline;
+}
+/** CONTENT OF projects.html **/
+
 /** END CONTENT **/
 /** FOOTER **/
 html, body {
