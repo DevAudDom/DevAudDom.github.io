@@ -64,9 +64,33 @@ p{ /* Relies on webkit */
 }
 .demoVideo{
     width: 500px;
+    height: 300px;
+    padding: 30px;
+    overflow: hidden;
+}
+#hmsvid{
+    width: 500px;
     height: 500px;
 }
+.linkProj {
+    font-size: 50%;
+}
+h4 {
+    padding-top: 20px;
+}
 /** END CONTENT of projects.html **/
+
+/** CONTENT of experience.html **/
+.expImg{
+max-width: 500px;
+max-height: 500px ;
+padding: 20px;
+}
+.expSection p {
+    overflow: hidden;
+    -webkit-line-clamp: 5;
+}
+/** END CONTENT of experience.html **/
 /** FOOTER **/
 html, body {
     height: 100%;
